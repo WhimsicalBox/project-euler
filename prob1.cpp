@@ -1,11 +1,22 @@
-int sum = 0;
-int counter = 0;
+#include <iostream>
+
+using namespace std;
 
 
-void loop(){
-if(counter<1000){
-if(counter % 3 == 0 || counter % 5 == 0){
-sum = counter + sum;
-}
-counter = counter + 1;
+int  main()
+{
+
+  int count = 0;
+  int sum = 0;
+
+  while (count < 1000)
+  {
+    if (count % 3 == 0 || count % 5 == 0)
+    {
+      sum = count + sum;
+    }
+  count++;
+  }
+  cout << sum << endl;
+  return 0;
 }
